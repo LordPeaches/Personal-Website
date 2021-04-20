@@ -1,15 +1,14 @@
 /**
-* Template Name: iPortfolio - v3.1.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Template Name: iPortfolio - v3.0.0
+* Customized by: Alex Hughes
 * Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif, "Aldrich";
   color: #272829;
 }
 
@@ -24,7 +23,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: /*"Raleway", sans-serif,*/ "Aldrich", "Raleway", sans-serif; /* Modified! */
 }
 
 /*--------------------------------------------------------------
@@ -574,7 +573,7 @@ section {
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
   transition: 0.3s;
-  width: 50%;
+  width: 100%; /* Changed from 50% back when we had 2 buttons, not just one like now */
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -657,6 +656,7 @@ section {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  font-family: Aldrich;
 }
 
 .portfolio-details .portfolio-description p {
