@@ -1,8 +1,7 @@
 /**
-* Template Name: iPortfolio - v3.1.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+  * Template Name: Portfolio - v3.0.0
+  * Author: BootstrapMade.com
+  * Customized by: Alex Hughes
 */
 (function() {
   "use strict";
