@@ -536,7 +536,7 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
+  transition: 0.3s; /* unsure what it affects */
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -544,15 +544,23 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  /*background: rgba(0, 0, 0, 0.281); Changes hover background overlay color. Originally 255, 255, 255, 0.5 */
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; /* Affects speed at which the overlay color appears */
   z-index: 2;
   opacity: 0;
+}
+
+.portfolio .portfolio-wrap img {
+  transition: 0.3s transform ease; /* Added myself, make zoom in/out smoother */
+}
+
+.portfolio .portfolio-wrap:hover img { /*Added myself, works to make image zoom in*/
+  transform: scale(1.05);
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -572,7 +580,7 @@ section {
   font-size: 28px;
   text-align: center;
   background: rgba(20, 157, 221, 0.75);
-  transition: 0.3s;
+  transition: 0.3s; /* changes link popup speed */
   width: 100%; /* Changed from 50% back when we had 2 buttons, not just one like now */
 }
 
