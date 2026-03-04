@@ -1460,12 +1460,12 @@ section {
 --------------------------------------------------------------*/
 .contact .contact-info-card {
   display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 20px 24px;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
   background: var(--color-surface-light);
   border-radius: var(--radius-md);
-  margin-bottom: 16px;
+  height: 100%;
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: box-shadow var(--duration-base) var(--ease-out);
 }
@@ -1476,33 +1476,34 @@ section {
 
 .contact .contact-info-card .icon {
   flex-shrink: 0;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   background: var(--color-primary-light);
   color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-sm);
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .contact .contact-info-card .info h4 {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--color-text-muted);
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .contact .contact-info-card .info p,
 .contact .contact-info-card .info a {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--color-text-primary);
   margin: 0;
   text-decoration: none;
+  word-break: break-word;
 }
 
 .contact .contact-info-card .info a:hover {
