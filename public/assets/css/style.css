@@ -41,7 +41,7 @@
   --font-body: 'JetBrains Mono', monospace;
 
   /* Spacing */
-  --section-padding: 100px 0;
+  --section-padding: 60px 0;
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
@@ -399,7 +399,7 @@ section {
 }
 
 .section-title {
-  padding-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
 }
 
 .section-title h2 {
@@ -1023,7 +1023,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 60px;
 }
 
 .contact .info {
@@ -1456,58 +1456,74 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Contact Section — No-Iframe Layout
+# Contact Section — Split Layout
 --------------------------------------------------------------*/
-.contact .contact-info-card {
+.contact-cta {
+  padding-right: 40px;
+}
+
+.contact-heading {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 12px;
+  line-height: 1.1;
+}
+
+.contact-subtext {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  max-width: 380px;
+}
+
+.contact-details {
+  border-left: 2px solid var(--color-primary-light);
+  padding-left: 28px;
+}
+
+.contact-row {
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 16px 18px;
-  background: var(--color-surface-light);
-  border-radius: var(--radius-md);
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  transition: box-shadow var(--duration-base) var(--ease-out);
+  padding: 10px 0;
+  font-size: 15px;
+  color: var(--color-text-secondary);
 }
 
-.contact .contact-info-card:hover {
-  box-shadow: var(--shadow-md);
+.contact-row + .contact-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.contact .contact-info-card .icon {
+.contact-row i {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  background: var(--color-primary-light);
+  width: 20px;
+  text-align: center;
+  font-size: 16px;
   color: var(--color-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: var(--radius-sm);
-  font-size: 18px;
 }
 
-.contact .contact-info-card .info h4 {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--color-text-muted);
-  margin-bottom: 2px;
-}
-
-.contact .contact-info-card .info p,
-.contact .contact-info-card .info a {
-  font-size: 14px;
-  font-weight: 500;
+.contact-row a {
   color: var(--color-text-primary);
-  margin: 0;
   text-decoration: none;
-  word-break: break-word;
+  font-weight: 500;
+  transition: color var(--duration-fast) var(--ease-out);
 }
 
-.contact .contact-info-card .info a:hover {
+.contact-row a:hover {
   color: var(--color-primary);
+}
+
+@media (max-width: 991px) {
+  .contact-cta {
+    padding-right: 0;
+    margin-bottom: 32px;
+  }
+  .contact-heading {
+    font-size: 1.8rem;
+  }
 }
 
 .btn-contact {
