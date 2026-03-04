@@ -18,6 +18,9 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Preload critical above-fold image -->
+  <link rel="preload" as="image" href="assets/img/hero-bg.jpg" fetchpriority="high">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,21 +37,17 @@
   <!-- OG Metatags -->
   <meta property="og:title" content="Alex Hughes">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="The website of Alex Hughes. Check out his Resume, Portfolio, and more!">
+  <meta property="og:description" content="Hardware design engineer with 3+ years in aerospace propulsion. Portfolio, resume, and contact.">
   <meta property="og:image" content="assets/img/hero-bg.jpg">
   <meta property="og:image:alt" content="Alex Hughes">
   <meta property="og:url" content="https://www.AlexDHughes.com">
 
-  <!-- Twitter Metatags -->
-  <meta property="twitter:title" content="Alex Hughes">
-  <meta property="twitter:description" content="The website of Alex Hughes. Check out his Resume, Portfolio, and more!">
-  <meta property="twitter:image" content="https://i.imgur.com/YQIeRGV.jpg">
-  <meta name="twitter:image:src" content="https://i.imgur.com/YQIeRGV.jpg">
-  <meta property="twitter:image:alt" content="Alex Hughes">
-  <meta property="twitter:url" content="https://www.AlexDHughes.com">
+  <!-- Social Card Metatags -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta property="twitter:site" content="@AlexHughesNOVA">
-  <meta property="twitter:creator" content="@AlexHughesNOVA">
+  <meta property="twitter:title" content="Alex Hughes, Hardware Engineer">
+  <meta property="twitter:description" content="Hardware design engineer with 3+ years in aerospace propulsion. Check out my portfolio and resume.">
+  <meta property="twitter:image" content="https://i.imgur.com/YQIeRGV.jpg">
+  <meta property="twitter:url" content="https://www.AlexDHughes.com">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -66,8 +65,8 @@
   <!-- =======================================================
   * Template Name: Portfolio - v3.0.0
   * Author: BootstrapMade.com
-  * Customized by: Alex Hughes
-  If you are reading this, Hi! Yes, I did do a lot of the front-end for this site. I know how to use Bootstrap, and I set up the Firebase web hosting.
+  * Customized extensively by: Alex Hughes
+  * Hosted on: Cloudflare Pages
   ======================================================== -->
 </head>
 
@@ -81,13 +80,11 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/profile-img.jpg" alt="Alex Hughes" class="img-fluid rounded-circle" fetchpriority="high" decoding="async">
         <h1 class="text-light"><a href="index.html">Alex Hughes</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/AlexHughesNOVA" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-          <!-- <a href="https://www.instagram.com/lordpeachez/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="mailto:AlexHughesNOVA@gmail.com" class="google-plus"><i class='bx bxl-google'></i></a>
+          <a href="https://www.instagram.com/AlexHughesNOVA" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="mailto:AlexHughesNOVA@gmail.com" class="google-plus"><i class='bx bx-envelope'></i></a>
           <a href="https://www.linkedin.com/in/alexhughesnova/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
@@ -110,7 +107,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Alex Hughes</h1>
-      <p>I am <span class="typed" data-typed-items="an Engineer, a Leader, an Entrepreneur, a Mentor, an Athlete"></span></p>
+      <p>I am <span class="typed" data-typed-items="a Hardware Engineer, a Design Lead, a Systems Builder, a Mentor, an Entrepreneur"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -127,35 +124,35 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/firefly.jpg" class="img-fluid" alt="">
+            <img src="assets/img/firefly.jpg" class="img-fluid" alt="Alex Hughes at Firefly Aerospace" loading="lazy" decoding="async">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Innovative Engineer &amp; Leader.</h3>
+            <h3>Mechanical Engineer &amp; Design Lead.</h3>
             <p class="fst-italic">
-              Just a little bit of information about me...
+              Hardware design engineer. 3+ years building flight-ready propulsion systems.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right my-1 f"></i> <strong>Name:</strong> <span>Alexander Hughes</span></li>
                   <li><i class="bi bi-chevron-right my-1"></i> <strong>LinkedIn User:</strong> <span>AlexHughesNOVA</span></li>
-                  <li><i class="bi bi-chevron-right my-1"></i> <strong>Company:</strong> <span> Firefly Aerospace</span></li>
+                  <li><i class="bi bi-chevron-right my-1"></i> <strong>Status:</strong> <span>Looking for cool projects!</span></li>
                   <li><i class="bi bi-chevron-right my-1"></i> <strong>City:</strong> <span>Austin, Texas</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right my-1"></i> <strong>Age:</strong> <span>25</span></li>
+                  <li><i class="bi bi-chevron-right my-1"></i> <strong>Age:</strong> <span>27</span></li>
                   <li><i class="bi bi-chevron-right my-1"></i> <strong>Degree:</strong> <span>B.S. in Bioengineering</span></li>
                   <li><i class="bi bi-chevron-right my-1"></i> <strong>Email:</strong> <span>AlexHughesNOVA(at)gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right my-1"></i> <strong>Phone:</strong> <span>+1 512 766 6446</span></li>
+                  <li><i class="bi bi-chevron-right my-1"></i> <strong>Phone:</strong> <span>512-806-1752</span></li>
                 </ul>
               </div>
             </div>
             <p class="h5 my-4">
-              I currently live in Austin Texas to work as a Propulsion Design Engineer at Firefly Aerospace, where I am the lead designer for our MLV Stage 1 Main Engines.
+              Spent 3+ years at Firefly Aerospace designing the Miranda 230,000 lbf main engine program from blank sheet through manufacturing, serving as engine-level CAD lead, thrust chamber responsible engineer, and propulsion planner.
             </p>
-            <p class="h6 my-4 text-muted">I am always looking for opportunities in the Entrepreneurship, Engineering & Technology worlds. If you are working on developing a cool new technology that has a valuable impact on the world, get in touch!</p>
+            <p class="h6 my-4 text-muted">Currently exploring new engineering challenges and open to impactful projects. Always open to ambitious engineering roles, technical leadership, and high-impact opportunities. If you're building something that matters, let's talk.</p>
           </div>
         </div>
 
@@ -168,7 +165,7 @@
 
         <div class="section-title">
           <h2>Facts</h2>
-          <p class="h5">Here is a short list of interesting statistics about me and my projects.</p>
+          <p class="h5">A few stats that speak to the scale and scope of the work.</p>
         </div>
 
         <div class="row no-gutters">
@@ -216,9 +213,7 @@
 
         <div class="section-title">
           <h2>Hard Skills</h2>
-          <p>I have a lot of Engineering skills, primarily related to CAD and Mechanical design. I also have experience with Electrical Engineering & Software Development, 
-            as well as with non-Engineering applications such as Photoshop, Premiere Pro, and more!
-          </p>
+          <p>Core competencies in mechanical CAD, simulation, and fabrication, built through hands-on aerospace engineering work across propulsion design, manufacturing, and systems integration.</p>
         </div>
 
         <div class="row skills-content">
@@ -254,9 +249,9 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Firebase <i class="val">55%</i></span>
+              <span class="skill">Ansys <i class="val">60%</i></span>
               <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -312,39 +307,39 @@
 
         <div class="section-title">
           <h2>Soft Skills</h2>
-          <p>I have spent a lot of time developing my 'Soft Skills' in order to make myself more effective and better at the projects I worked on. Below are some of the ones I am best suited at.</p>
+          <p>Good engineering takes more than technical chops. Here's what I bring to a team beyond the CAD screen.</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
             <div class="icon"><i class="bi bi-globe2"></i></div>
             <h4 class="title"><a href="">Leadership</a></h4>
-            <p class="description">Leadership has always been natural for me. Be it starting the Mason Entrepreneurship Club or running my own Company, I am great at finding a core team and leading development on a project.</p>
+            <p class="description">I've led cross-functional teams across design, manufacturing, and operations. Whether it's a daily standup or a program milestone review, I like being the one driving things forward.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
             <div class="icon"><i class="bi bi-lightbulb-fill"></i></div>
             <h4 class="title"><a href="">Critical Thinking</a></h4>
-            <p class="description">Never one to take something for granted, I love understanding problems or objectives on a deeper level in order to get a better, faster outcome.</p>
+            <p class="description">I don't take the first answer at face value. I dig into root causes and optimize for the real-world constraints that actually matter, not the textbook ones.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="icon"><i class="bi bi-sunrise"></i></div>
             <h4 class="title"><a href="">Motivation</a></h4>
-            <p class="description">Probably my greatest skill, I am always extremely motivated to work on projects, especially if they are interesting, exciting, and important.</p>
+            <p class="description">I do my best work when the stakes are high and the problem is real. Flight-critical hardware schedules, tight prototype timelines, that's where I thrive.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
             <div class="icon"><i class="bi bi-battery-charging"></i></div>
             <h4 class="title"><a href="">Focused</a></h4>
-            <p class="description">Nothing is more fun then working on what you love. I am laser focused and always bring results.</p>
+            <p class="description">I stay locked in even when priorities compete. In aerospace, consistency under pressure isn't optional, and I've built that discipline into how I work.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
             <div class="icon"><i class="bi bi-hourglass-split"></i></div>
             <h4 class="title"><a href="">Initiative</a></h4>
-            <p class="description">I don't sit around and wait for someone to tell me what to do. Give me a task and a goal, I'll figure out how to get it done efficiently and effectively.</p>
+            <p class="description">If I see a problem, I fix it. I built a custom React dashboard at Firefly because no one asked me to, they just needed one. That's how I operate.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
             <div class="icon"><i class="bi bi-emoji-laughing"></i></div>
             <h4 class="title"><a href="">Enthusiastic</a></h4>
-            <p class="description">My excitedness is infectous, just ask anyone who has joined my Solar Car Team!</p>
+            <p class="description">I bring real energy to whatever I'm working on. It's contagious, ask anyone who joined my Solar Car team or my FRC students. Excitement makes teams better.</p>
           </div>
         </div>
 
@@ -357,73 +352,87 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>Interested in a more formal way of showing my recent work and achievements? Below is my Resume, take a look if you want.</p>
+          <p>3+ years of hands-on hardware design experience in aerospace propulsion, from blank sheet to flight-ready hardware. <a href="Resume - Alex Hughes - 2 Pages.docx" download style="color: var(--color-primary);">Download full resume</a></p>
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
-              <h4>Alex Hughes</h4>
-              <p><em>Innovative and Passionate Engineer with 4+ years of experience building the Solar Cars, Rocket Engines, and more!</em></p>
+              <h4>Alexander Hughes</h4>
+              <p><em>Mechanical/hardware design engineer with 3+ years of hands-on design, build, and test experience in complex mechanical systems. Led the design of a high-performance engine assembly from concept through manufacturing and test, managing cross-functional teams across design, analysis, manufacturing, and vendor integration.</em></p>
               <ul>
-                <li>Cedar Park, Texas, 78613</li>
-                <li>(703) 646-1498</li>
-                <li>AlexHughesNOVA (at) gmail.com</li>
+                <li>Austin, TX</li>
+                <li>512-806-1752</li>
+                <li>AlexHughesNOVA@gmail.com</li>
+                <li><a href="https://www.AlexDHughes.com">www.AlexDHughes.com</a></li>
               </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
-              <h4>Bachelors of Science in Bioengineering</h4>
-              <h5>2017 - 2021</h5>
-              <h5> GPA: 3.8 </h5>
-              <p><em>George Mason University (GMU), Fairfax, VA</em></p>
-              <p>I went to GMU as a University Scholar, one of only 20 students, selected out of over 3,000 Freshmen, to receive such an honor. Along with this honor, I received a full-tuition scholarship to study here at GMU.</p>
-              <p>I  concentrated in Signals and Systems, and took numerous Mechanical, Electrical, and Software Engineering courses.</p>
-              <p>I graduated with Honors in May of 2021, and received the Outstanding Academic Achievement Award.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Governors School @ Innovation Park</h4>
-              <h5>2015 - 2017</h5>
-              <h5> GPA: 4.4 </h5>
-              <p><em>George Mason University Science & Technology Campus, Manassas, VA</em></p>
-              <p>In 11th and 12th Grade of High School, I took half of my classes at GMU as part of the Governors School program. Here I took advanced Math, Biology, and Engineering courses.</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Lead Design Engineer at Firefly Aerospace</h4>
-              <h5>2021 - Present</h5>
-              <p><em>Austin, Texas </em></p>
+              <h4>Bachelor of Science in Bioengineering</h4>
+              <h5>2017 – 2021</h5>
+              <p><em>George Mason University, Fairfax, VA</em></p>
               <ul>
-                <li><b>Current Role:</b> Miranda Lead Design Engineer</li>
-                <li><b>Previous Roles:</b> Reaver Design Engineer, Reaver Thrust Chamber Responsible Engineer</li>
-                <li>Currently Lead Designer of the Antares A330 and MLV Stage 1 Main Engines.</li>
-                <li>In addition to owning the Engine CAD and Design, I am also the Responsible Engineer for the Thrust Chamber and Tap Off Manifolds.</li>
+                <li>University Scholar Recipient, one of 20 students selected from 3,000+ freshmen; full-tuition scholarship</li>
+                <li>Outstanding Academic Achievement Award</li>
+                <li>GPA: 3.8</li>
               </ul>
             </div>
+
+            <h3 class="resume-title">Additional Experience</h3>
             <div class="resume-item">
-              <h4>President of Hypernova Solar</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>Fairfax, Virginia </em></p>
+              <h4>President, Hypernova Solar Car Team</h4>
+              <h5>2018 – 2021</h5>
+              <p><em>George Mason University, Fairfax, VA</em></p>
               <ul>
-                <li>Started the Hypernova Solar Car Team as a Freshman. This is the first new Solar Car Team in Virginia in over 20 years.</li>
-                <li>Grew the team from an Idea in my head into the Largest Competitive Engineering Organization at George Mason University with over 40 active members. </li>
-                <li>Converted our team into a 501c3 Non-Profit Organization and helped lead a successful fundraising campaign.</li>
-                <li>Successfully finished the only active Solar Car in Virginia in the Spring of 2021.</li>
+                <li>Founded the first new solar car team in Virginia in 20+ years; grew to 40+ members and converted to 501(c)(3) non-profit</li>
+                <li>Raised $25,000 in sponsorship and delivered the only active solar car in Virginia (Spring 2021)</li>
               </ul>
             </div>
+
             <div class="resume-item">
               <h4>CAD Teaching Assistant</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>Fairfax, Virginia</em></p>
+              <h5>2018 – 2021</h5>
+              <p><em>George Mason University, Fairfax, VA</em></p>
               <ul>
-                <li>Was hired as a Freshman to teach CAD to all students taking 'Introduction to Engineering' at George Mason University.</li>
-                <li>Developed curriculum and taught lectures independently to over 2600+ students during my time here.</li>
-                <li>Was re-hired for seven semesters in a row, and found a successful replacement for my position when I graduate.</li>
-                
+                <li>Hired as a freshman to independently develop curriculum and teach CAD to 2,600+ students across seven semesters</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Firefly Aerospace &nbsp;<small class="text-muted fw-normal" style="font-size:0.7em;">Aug 2021 – Mar 2025 · Cedar Park, TX</small></h3>
+
+            <div class="resume-item">
+              <h4>Propulsion Planner: Miranda Main Engine Program</h4>
+              <h5>Aug 2024 – Mar 2025</h5>
+              <ul>
+                <li>Owned production tracking for every component across all engine builds through first flight, auditing design release, ERP status, manufacturing progress, and inventory in real time</li>
+                <li>Built a custom React dashboard integrating PLM, ERP, and project management data into a single interface for program leadership</li>
+                <li>Maintained critical path analyses for each build, delivering data-driven milestone dates to program management</li>
+                <li>Ran 3x weekly cross-functional standup meetings across design, manufacturing, and leadership</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Engine Design Lead: Miranda (230,000 lbf Tap-Off Cycle)</h4>
+              <h5>May 2022 – Aug 2024</h5>
+              <ul>
+                <li>Maintained master CAD assembly in Siemens NX; created WBS, part numbering scheme, and full assembly structure for the engine program</li>
+                <li>Served as primary design authority; reviewed and approved nearly every component integrated into the engine</li>
+                <li>Solely responsible for complete thrust chamber design: 100% of CAD models and fabrication drawings from blank sheet through release</li>
+                <li>Drawing checker for 50%+ of all parts; verified GD&T compliance per ASME Y14.5-2018</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Propulsion Engineer: Reaver / Alpha Main Engine</h4>
+              <h5>Aug 2021 – May 2022</h5>
+              <ul>
+                <li>Owned major design changes for Alpha Flight 3, redesigning critical components for manufacturing optimization ahead of Firefly's first commercial customer launch</li>
+                <li>Delivered custom hardware from design to test stand within 2 months of joining the company</li>
               </ul>
             </div>
           </div>
@@ -432,107 +441,93 @@
       </div>
     </section><!-- End Resume Section -->
 
-    <!-- ======= Portfolio Section ======= --> <!-- All photos are 4:3 -->
+    <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
           <h2>Portfolio</h2>
-          <p>How about I show you some of the projects I have worked on? Click on the images below to learn more!</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Engineering</li>
-              <li data-filter=".filter-card">Entrepreneurship</li>
-              <!-- <li data-filter=".filter-web">Web</li> -->
-            </ul>
-          </div>
+          <p>A selection of engineering projects, mentorship programs, and ventures I've led or contributed to significantly. Click any project to learn more.</p>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <!-- Hypernova Solar -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app filter-web">
-            <a href="HypernovaSolar.html" class="item-wrap fancybox">
+          <!-- Robotics Mentorship: Team 1895 -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="FRC1895.html" class="item-wrap">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/Hypernova Solar1.jpg" class="img-fluid" alt="Hypernova Solar Car">
+                <img src="assets/img/portfolio/Team1895 1.png" class="img-fluid" alt="FRC Team 1895" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">FRC Team 1895 | Robotics Mentor</div>
               </div>
             </a>
           </div>
 
-          <!-- Mason Entrepreneurship Club-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <a href="MasonEntrepreneurshipClub.html" class="item-wrap fancybox">
+          <!-- Robotics Mentorship: Team 612 -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="FRC612.html" class="item-wrap">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/MasonEntrepeneurshipClub1.png" class="img-fluid" alt="Mason Entrepeneurship Club">
+                <img src="assets/img/portfolio/612 1.jpg" class="img-fluid" alt="FRC Team 612" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">FRC Team 612 | Robotics Mentor</div>
               </div>
             </a>
           </div>
 
-          <!-- StealthBot -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="StealthBot.html" class="item-wrap fancybox">
+          <!-- Robotics Mentorship: Team 6800 -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="FRC6800.html" class="item-wrap">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/Stealthbot1.png" class="img-fluid" alt="Stealthbot">
+                <img src="assets/img/portfolio/Valor Cover Pic.png" class="img-fluid" alt="FRC Team 6800 Valor" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">FRC Team 6800 Valor | Robotics Mentor</div>
               </div>
             </a>
           </div>
 
           <!-- Firefly Aerospace -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="Firefly Aerospace.html" class="item-wrap fancybox">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="Firefly Aerospace.html" class="item-wrap">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/firefly cover pic.png" class="img-fluid" alt="Firefly Aerospace">
+                <img src="assets/img/portfolio/firefly cover pic.png" class="img-fluid" alt="Firefly Aerospace" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">Firefly Aerospace | Propulsion Engineer</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Hypernova Solar -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="HypernovaSolar.html" class="item-wrap">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/Hypernova Solar1.jpg" class="img-fluid" alt="Hypernova Solar Car" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">Hypernova Solar, Founder & President</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- StealthBot -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="StealthBot.html" class="item-wrap">
+              <div class="portfolio-wrap">
+                <img src="assets/img/portfolio/Stealthbot1.png" class="img-fluid" alt="StealthBot" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">StealthBot | FRC Competition Robot</div>
               </div>
             </a>
           </div>
 
           <!-- Belt Printer -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="BeltPrinter.html" class="item-wrap fancybox">
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="BeltPrinter.html" class="item-wrap">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/BeltPrinter2.png" class="img-fluid" alt="Belt Printer">
+                <img src="assets/img/portfolio/BeltPrinter2.png" class="img-fluid" alt="Belt Printer" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">Belt Printer | Infinite-Z 3D Printer</div>
               </div>
             </a>
           </div>
 
-          <!-- Team 612 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="FRC612.html" class="item-wrap fancybox">
+          <!-- Mason Entrepreneurship Club -->
+          <div class="col-lg-4 col-md-6 portfolio-item">
+            <a href="MasonEntrepreneurshipClub.html" class="item-wrap">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/612 1.jpg" class="img-fluid" alt="FRC Team 612">
-              </div>
-            </a>
-          </div>
-
-          <!-- Bottom Right One --> <!--
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Team 6800 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="FRC6800.html" class="item-wrap fancybox">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/Valor Cover Pic.png" class="img-fluid" alt="FRC Team 6800">
-              </div>
-            </a>
-          </div>
-
-          <!-- Team 1895 Mentor-->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <a href="FRC1895.html" class="item-wrap fancybox">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/Team1895 1.png" class="img-fluid" alt="FRC Team 1895">
+                <img src="assets/img/portfolio/MasonEntrepeneurshipClub1.png" class="img-fluid" alt="Mason Entrepreneurship Club" loading="lazy" decoding="async">
+                <div class="portfolio-item-title">Mason Entrepreneurship Club | Founder</div>
               </div>
             </a>
           </div>
@@ -546,46 +541,39 @@
     <section id="contact" class="contact">
       <div class="container">
 
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Interested in contacting me? Send me a Email, Shoot me a text, Message me via Homing Pigeon, whatever you want! All my information is below. Can't wait to hear from you!</p>
-        </div>
+        <div class="row align-items-center" data-aos="fade-in">
 
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Austin, TX, USA</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="mailto:AlexHughesNOVA@gmail.com">AlexHughesNOVA (at) gmail.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Voicemail:</h4>
-                <p>+1 512 766 6446</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-globe2"></i>
-                <h4>LinkedIn:</h4>
-                <p><a href="https://www.linkedin.com/in/alexhughesnova/">LinkedIn.com/AlexHughesNOVA</a></p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJLwPMoJm1RIYRetVp1EtGm10&key=AIzaSyBnpY1T34TA4tvRfR5rNMdLjL3S4rkacf8" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
+          <div class="col-lg-5 contact-cta">
+            <h2 class="contact-heading">Let's Talk</h2>
+            <p class="contact-subtext">Open to new opportunities, interesting collaborations, and good conversations. Best reached by email.</p>
+            <a href="mailto:AlexHughesNOVA@gmail.com" class="btn-contact">
+              <i class="bi bi-envelope"></i> Send an Email
+            </a>
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqyPQmu6JQK-ff6IGVxMYz4V5H2SPFa_XyLzO_e25q-ad2oA/viewform?embedded=true" width="640" height="820" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          <div class="col-lg-6 offset-lg-1">
+            <div class="contact-details">
+              <div class="contact-row">
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:AlexHughesNOVA@gmail.com">AlexHughesNOVA@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <i class="bi bi-telephone-fill"></i>
+                <span>512-806-1752</span>
+              </div>
+              <div class="contact-row">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Austin, TX</span>
+              </div>
+              <div class="contact-row">
+                <i class="bx bxl-linkedin"></i>
+                <a href="https://www.linkedin.com/in/alexhughesnova/" target="_blank">linkedin.com/in/AlexHughesNOVA</a>
+              </div>
+              <div class="contact-row">
+                <i class="bx bxl-instagram"></i>
+                <a href="https://www.instagram.com/AlexHughesNOVA" target="_blank">@AlexHughesNOVA</a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -602,32 +590,6 @@
   
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Firebase SDK -->
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.4.1/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="/__/firebase/8.4.1/firebase-analytics.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
-
-  <!-- Firebase Config, I believe this will set up Google Analytics-->
-  <script>
-    
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAFvxDNDrFNoZ5kT6yOgOam5Y0GYG119P8",
-    authDomain: "personal-website-v1-ba9da.firebaseapp.com",
-    projectId: "personal-website-v1-ba9da",
-    storageBucket: "personal-website-v1-ba9da.appspot.com",
-    messagingSenderId: "226649020274",
-    appId: "1:226649020274:web:04f66c47020bdbfe6dafeb",
-    measurementId: "G-9GBXR9D1KF"
-  };
-  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>

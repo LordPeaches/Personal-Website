@@ -54,10 +54,8 @@
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Alex Hughes</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://twitter.com/AlexHughesNOVA" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-          <!-- <a href="https://www.instagram.com/lordpeachez/" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-          <a href="https://join.skype.com/invite/JJcrjMFRVdit" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.instagram.com/AlexHughesNOVA" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="mailto:AlexHughesNOVA@gmail.com" class="google-plus"><i class="bx bx-envelope"></i></a>
           <a href="https://www.linkedin.com/in/alexhughesnova/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
@@ -78,78 +76,64 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Belt Printer</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Belt Printer</li>
-          </ol>
+    <!-- ======= Hero Slider ======= -->
+    <section class="portfolio-hero">
+      <div class="portfolio-details-slider swiper-container">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/BeltPrinter2.png" alt="Belt Printer CAD" decoding="async">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/BeltPrinter5.png" alt="Belt Printer Assembly" loading="lazy" decoding="async">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/portfolio/BeltPrinter4.png" alt="Belt Printer Full Model" loading="lazy" decoding="async">
+          </div>
         </div>
-
+        <div class="swiper-pagination"></div>
       </div>
-    </section><!-- End Breadcrumbs -->
+    </section>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+    <!-- ======= Project Content ======= -->
+    <section class="portfolio-content">
       <div class="container">
-
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper-container">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/BeltPrinter2.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/BeltPrinter5.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/BeltPrinter4.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
+            <span class="project-section-label">Engineering</span>
+            <h1 class="project-title">Belt Printer: Infinite-Z 3D Printer</h1>
+            <p class="project-tagline">A large-format 3D printer with an infinite Z-axis, designed to print full-scale solar car body panels in carbon fiber and PETG.</p>
+            <div class="project-body">
+              <p>
+                A persistent challenge in solar car construction is producing large, complex body panels affordably. Belt Printer was designed to solve that problem, a custom FDM 3D printer that prints onto a moving conveyor belt, enabling continuous extrusion along an effectively unlimited Z-axis while providing a 1m × 1m XY build area.
+              </p>
+              <p>
+                This was the second-generation iteration of our large-scale 3D printing effort. The design uses carbon fiber and PETG for structural and aerodynamic parts, combining low material cost with sufficient stiffness for solar car applications.
+              </p>
+              <p>
+                I led the design effort, producing a 100% parametric CAD model in OnShape while the team began machining linear rail components. The project was an exercise in designing custom motion systems, managing material-process tradeoffs, and leading fabrication planning with a student team.
+              </p>
             </div>
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
+            <div class="project-specs">
+              <h3>Project Details</h3>
               <ul>
-                <li><strong>Category</strong>: Engineering</li>
-                <li><strong>Status</strong>: Active</li>
-                <li><strong>Project Date</strong>: Spring of 2021</li>
+                <li><strong>Role</strong>Lead Designer</li>
+                <li><strong>Project Date</strong>Spring 2021</li>
+                <li><strong>Status</strong>In Progress</li>
+                <li><strong>Build Volume</strong>1m × 1m × ∞ (Z)</li>
+                <li><strong>Materials</strong>Carbon Fiber · PETG</li>
+                <li><strong>CAD Tool</strong>OnShape</li>
+                <li><strong>Goal</strong>Print full-scale solar car body panels</li>
               </ul>
             </div>
-            <div class="portfolio-description">
-              <h2>Belt Printer: An Infinite 3D Printer </h2>
-              <p>
-                One of the goals I've always had on Hypernova Solar is to 3D Print our cars. This is due to several economic and engineering factors that make typical Solar Cars extremely
-                difficult to build, but also the engineering challenges of attempting to 3D print an entire car are super interesting.
-              </p>
-              <p>
-                Belt Printer is the 2nd iteration of our Large-Scale 3D Printer project, which I am leading. It works by 3D Printing Carbon Fiber & PETG onto a moving conveyor belt,
-                effectively giving us a Z-axis of infinite length. The X and Y axis are both 1 meter.
-              <p>
-                I have been CADing a 100% realistic model in OnShape the past several weeks, and we've begun machining the bars for the linear rails. Stay tuned to my Twitter account for progress updates!
-              </p>
-              
-            </div>
-            
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section><!-- End Project Content -->
 
   </main><!-- End #main -->
 
