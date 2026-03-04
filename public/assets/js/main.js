@@ -167,6 +167,18 @@
   });
 
   /**
+   * Portfolio details slider — frosted glass background injection
+   */
+  document.querySelectorAll('.portfolio-details-slider .swiper-slide').forEach(function(slide) {
+    var img = slide.querySelector('img');
+    if (!img) return;
+    var bg = document.createElement('div');
+    bg.className = 'slide-bg';
+    bg.style.backgroundImage = "url('" + img.getAttribute('src') + "')";
+    slide.insertBefore(bg, slide.firstChild);
+  });
+
+  /**
    * Portfolio details slider
    */
   new Swiper('.portfolio-details-slider', {
@@ -180,6 +192,10 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     }
   });
 
